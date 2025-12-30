@@ -1,0 +1,43 @@
+## Lesson 1 - Basics
+
+- Code runs from top to bottom
+- Variables are containers to store info in | can be a string "your text here" , numbers 12345 , boolean true/false
+- Functions only run when called
+
+
+type(nil)         -- nil, the absence of a value
+type(true)        -- boolean
+type(10.4 * 12)   -- number
+type("welcome")   -- string
+type(print)       -- function
+type({})          -- table
+type(io.stdin)    -- userdata
+
+
+
+## Example
+```lua
+playerName = "Maxedmoto"    -- Variable to use in code: playerName -> the info/data = a Players name: Maxedmoto (string because of the "")
+
+function myName()           -- function creates a function and then give it a name you want
+   print(playerName)        -- code wihin a function / what will do function do when its called | when called prints the variable playerName (must exist)
+end                         -- don't forget the end at the end ;)
+
+myName()                    -- This calls the function above. (prints: Maxedmoto)
+
+
+Output:
+
+Maxedmoto
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+Output of Codex - lesson 1 - Player Card:
+
+Playername: Maxed   |  companion: Houbi  | Team: blue
+Maxed is alive
+Remaining lives: 💖3 of 3
+Maxed - has active sword!
+Driving 🏍️
