@@ -1,0 +1,30 @@
+----- KDA & KD ratio -----
+
+kills = 10
+deaths = 2
+assists = 5
+
+function getKDA()
+   kda = (kills + assists) / deaths
+   print("Your KDA ratio is " .. kda)
+end
+
+function getKD()
+   kd = kills / deaths
+   print("KD-ratio: " .. kd)
+end
+
+
+
+getKDA()
+getKD()
+
+
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+
+Output:
+
+Your KDA ratio is 7.5
+KD-ratio: 5.0
