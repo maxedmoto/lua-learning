@@ -3,6 +3,12 @@
 -- how to calculate using variables
 -- creating a variable KDA/KD that changes when the variables kills, assists, deaths change
 
+kills = 10
+
+kills = kills + 1
+
+// new kills will be 11 (10 + 1)
+
 
 
 __________________________________________________________________________
