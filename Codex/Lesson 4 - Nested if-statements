@@ -1,0 +1,32 @@
+-- Bike and Level check to get acces to Area 1 | Nested if-statements
+
+playerLevel = 11
+hasBike = true
+area1Level = 10
+
+-- Nested if-statements
+
+function enterArea1()
+   if playerLevel >= area1Level then
+     if hasBike then
+        print("You can enter the area!")
+     else
+        print("You must have a bike!")
+     end
+   else
+      print("You must be at least level: " .. area1Level)
+   end
+end
+
+enterArea1()
+
+
+________________________________________________________________
+________________________________________________________________
+________________________________________________________________
+
+Output:
+
+You can enter the area!           (if playeLevel > 10 & hasBike is true)
+You must have a bike!             (if playeLevel > 10 & hasBike is false)
+You must be at least level: 10    (if playerLevel < 10 | 10 because area1Level = 10)
