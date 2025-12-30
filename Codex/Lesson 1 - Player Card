@@ -1,0 +1,68 @@
+-- Player Card / Player Info
+
+local MAX_LIVES = 3
+local livesOver = 3
+local name = "Maxed"
+local character_color = "blue"
+local age = 27
+local has_sword = false
+local speed = 16
+local companion_name = "Houbi"
+local alive = true
+
+
+function whatIsName()
+   print("Playername: " .. name .."  "  .." | " .. " companion: " .. companion_name .. " " .. " | " .. "Team: " .. character_color)
+end  
+
+
+function checkLives()
+  if livesOver == 0 then
+    alive = false
+    speed = 0
+  end
+end  
+
+
+function isAlive()
+   if alive then
+   print(name .. " is alive")
+   else
+     print(name .. " is dead")
+   end
+end
+
+
+function remainingLives()
+  print("Remaining lives: 💖" .. livesOver .. " of " .. MAX_LIVES)
+end  
+
+function checkAge()
+  if age >= 18 then
+    has_sword = true
+    print(name .. " - has active sword!")
+  else
+    print(name .. " - is CHU CHU")
+  end  
+end  
+
+function isSpeed()
+  if speed >= 15 then
+    print("Driving 🏍️")
+  elseif speed >= 10 then
+    print("Running 🏃")
+  elseif speed >= 1 then
+    print("Just walking 🏃")
+  else
+    print("Standing ☕")
+  end
+end  
+
+
+
+whatIsName()
+checkLives()
+isAlive()
+remainingLives()
+checkAge()
+isSpeed()
