@@ -1,0 +1,31 @@
+## Lesson 7 - for loops
+
+
+-- Enemy spawn | for loops
+
+enemyHP = 30
+enemies = 3
+totalEnemies = 0
+
+function spawnEnemy()
+  for i = 1, enemies do                                                   -- i starts at 1 stops at 3 (because enemies is set to 3)
+    newEnemy = enemyHP * i                                                -- for every loop until 3rd reached | newEnemy gets increased by 30 (newEnemy = 30 * i) i increases by 1 until 3 | 30/60/90
+    print("Enemy #" .. i .. " spawned with " .. newEnemy .. " HP")        -- prints Enemy #1/2/3 spawned with 30/60/90 HP
+  end
+  print(enemies .. " enemies has spawned!")                               -- when for loop ends it prints | 3 enemies has spawned
+end
+
+
+spawnEnemy()                                                              -- Calls our function
+
+
+____________________________________________________________________________
+____________________________________________________________________________
+____________________________________________________________________________
+
+Console:
+
+Enemy #1 spawned with 30 HP
+Enemy #2 spawned with 60 HP
+Enemy #3 spawned with 90 HP
+3 enemies has spawned!
