@@ -1,0 +1,27 @@
+## Lesson 7 - for loops
+
+# For Loops
+A for loop in Lua is used to repeat a block of code a specific number of times, perfect for things like looping through levels, counting scores, and creating enemies.
+
+Let's take a look at the syntax for a for loop in Lua.
+
+
+#EXAMPLE
+
+```lua
+for i = start, end, step do
+    -- code block
+end
+
+i is the control variable.
+
+In Lua, you start with index 1, not 0 like in other languages!
+
+start is the starting value of that variable.
+
+end is the ending value of that variable (inclusively).
+
+step is the increment (or decrement using -) value for i in each iteration.
+This is optional; if omitted, the default step is 1.
+
+Lua uses 1-based indexing!
