@@ -1,0 +1,39 @@
+-- Title Sequence without function
+
+name = "maxedmoto"
+year = 2025
+key = "E"
+
+part_credits = "Created by"
+part_start_game = "Press " .. key .. " to begin."
+
+print(part_credits, name .. ", " .. year)
+print(part_start_game)
+
+
+-- Title Sequence with function
+
+name = "maxedmoto"
+year = 2025
+key = "E"
+
+part_credits = "Created by"
+part_start_game = "Press " .. key .. " to begin."
+
+function showTitle()
+   print(part_credits, name .. ", " .. year)
+   print(part_start_game)
+end
+
+
+showTitle()
+
+
+_____________________________________________________________________
+_____________________________________________________________________
+_____________________________________________________________________
+
+Both Outputs will be:
+
+Created by      maxedmoto, 2025
+Press E to begin.
