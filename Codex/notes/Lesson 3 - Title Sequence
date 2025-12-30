@@ -1,0 +1,46 @@
+Some things to note about Strings specifically in Lua:
+
+Strings cannot be modified once created
+player = "princess peach"
+print(player) -- Output: princess peach
+
+Can be written in both single ' ' or double " " quotes
+display_message = 'GO TEAM, GO!'
+display_message2 = "Oh... Try again team."
+
+Strings can be multi-line with [[ ]]
+starting_sequence = [[
+Mira, Rumi, and Zoey 
+all looked at each 
+other in awe, as they
+leaped across the stage...
+]]
+
+
+## String Concatenation
+We learned that the comma , notation is used to combine two values together when we print.
+
+dragon = "Vhagar"
+print("You are fighting", dragon)
+
+String concatenation brings together strings and variables into one string.
+
+In Lua, we use two periods .. to concatenate strings:
+
+name = "Player"
+display_message = "Hello, " .. name
+
+print(display_message)  
+-- Output: Hello, Player
+
+Both , and the .. are ways to combine strings and variables but we use .. for concatenating strings, and a comma , to print multiple values with spacing.
+
+Lua will automatically convert numbers to strings, but only in print(). In other contexts you'll get an error.
+
+-- this code will ERROR: 
+rupees = 4439
+bonus = 100 
+
+result = rupees .. bonus 
+
+Since neither variables are strings, Lua won't know how to convert them.
