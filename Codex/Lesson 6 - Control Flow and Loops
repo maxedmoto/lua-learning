@@ -1,0 +1,37 @@
+## Lesson 6 - Boss ready | Control Flow and Loops
+
+
+boss_ready = false
+turns = 0
+
+function getBoss()
+
+  while not boss_ready do
+     print("The boss is preparing...")      -- prints "The boss is preparing..." while boss_ready is false
+     turns = turns + 1                      -- adds +1 turns nonstop or until stopped
+
+    if turns == 5 then                      -- if-statements gets activated when the turns = 5 turns
+       boss_ready = true                    -- boss_ready changes to true - when turns = 5 turns
+       print("The boss has appeared!")      -- prints "The boss has appeared!" when turns = 5 turns
+    end
+  end
+end  
+
+
+getBoss()                                   -- Calls the function above (getBoss)
+
+
+
+_______________________________________________________
+_______________________________________________________
+_______________________________________________________
+
+Output:
+
+The boss is preparing...
+The boss is preparing...
+The boss is preparing...
+The boss is preparing...
+The boss is preparing...
+The boss has appeared!
+
