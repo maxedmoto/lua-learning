@@ -1,0 +1,10 @@
+## Lesson 6 - Control Flow and Loops
+
+-- a while loop will repeat for as long as a condition is true
+-- We can use a while loop to keep track of anything using the while/do syntax. You'll use the end keyword to close your loop.
+
+
+# Negating State
+In many game systems, you're constantly checking for when to stop doing something, which often depends on the absence of a state, not just its presence.
+
+To negate state means to check if something is not true, using the keyword not.
