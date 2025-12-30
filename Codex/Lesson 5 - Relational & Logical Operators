@@ -1,0 +1,31 @@
+## Lesson 5 - Relational & Logical Operators
+
+
+-- (you can change these values to test different outcomes) 
+isAlive = true
+isStunned = false
+health = 20
+hasKey = false
+completedQuest = true
+
+-- Write code below 💖
+
+function battle()
+   if isAlive and not isStunned and health > 10 and (hasKey or completedQuest) then
+     print("Your boss battle has begun!")
+   else
+     print("You cannot enter the boss battle.")
+   end
+end
+
+battle()
+
+
+
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+
+Output:
+
+Your boss battle has begun!
