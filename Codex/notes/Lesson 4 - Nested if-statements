@@ -1,0 +1,6 @@
+## Lesson 4 - Allow in erea | Nested if-statement
+
+- as regular if-statement you can create a nested if-statemnt
+  if-stament inside another if-stament.
+
+Example: must be atleast Level 10 and must have a Bike to enter an Area. (see Lesson 4 - Nested If-statements)
