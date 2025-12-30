@@ -1,0 +1,45 @@
+## Lesson 5 
+
+# Relational Operators
+Lua provides the following relational operators:
+
+--   < less than
+--   > greater than
+--   <= less than or equal to
+--   >= greater than or equal to
+--   == equal to (equality)
+--   ~= not equal to (the negation of equality)
+--   It's important to note that "0" == 0 would be false since "0" evaluates to a string and 0 evaluates to an integer. "0" == "0" would be true.
+
+
+
+
+
+# Logical Operators
+The logical operators are and, or, and not. We can use them in an endless amount of ways when creating a game.
+
+
+isAlive = true
+hasAmmo = false
+
+if isAlive and hasAmmo then
+  print("You can shoot!")
+else
+  print("Cannot fire.")
+end
+
+The not operator inverts a boolean, and only works on one value at a time. We can use not to negate state for gameplay, such as the example below.
+
+paused = false
+
+if not paused then
+  print("Game is running")
+end
+
+We can also add parentheses to our if statements in order to have even more control over the boolean result.
+
+if isAlive and (hasKey or knowsPassword) then
+  print("Access Granted!")
+else
+  print("Access Denied!")
+end
