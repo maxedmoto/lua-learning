@@ -1,0 +1,18 @@
+## Lesson 1 - Operators 1 Arimethic & Conc
+
+
+calcute the the remainder (left over) number. 
+Example:
+85 % 10 = 5 || 8 * 10 = 80 -> remainder is 5
+
+
+local playerScore = 85
+
+-- TODO: Write your code here to calculate the remainder using modulo operator
+function checkRemainder()
+   remainder = playerScore % 10
+   print(remainder)
+end
+
+-- Print the remainder
+checkRemainder()
