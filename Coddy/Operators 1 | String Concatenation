@@ -1,0 +1,38 @@
+## Lesson Operators 1 Arthmetic & Conc
+String Concatention
+
+
+
+The string concatenation operator represented by two dots .. allows you to join two or more strings together to create a new, longer string.
+
+Here's how string concatenation works:
+
+firstName = "John"
+lastName = "Smith"
+fullName = firstName .. " " .. lastName    -- fullName is "John Smith"
+
+greeting = "Hello, " .. "World!"          -- greeting is "Hello, World!"
+Notice that concatenation doesn't automatically add spaces between strings - you need to include them explicitly. In the example above, we added " " between the first and last name to separate them with a space.
+
+________________________________________________________________________________________________
+________________________________________________________________________________________________
+
+-- Create variables for first name and last name
+firstName = "Alex"
+lastName = "Hunter"
+
+-- TODO: Write your code here
+function fullName()
+   print(firstName .. " " .. lastName)
+end
+
+-- Print the full name
+fullName()
+
+________________________________________________________________________________________________
+________________________________________________________________________________________________
+________________________________________________________________________________________________
+
+Output:
+
+Alex Hunter
