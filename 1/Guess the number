@@ -1,0 +1,19 @@
+A simple guessing game | Guess the number and get a random number between 2500 and 10000
+
+
+-- Variables for the guessing game
+local secretNumber = 42
+
+-- Guessing game function
+local function numGuess(userGuess)
+    isCorrect = userGuess == secretNumber
+    price = math.random(2500, 10000)
+  if isCorrect then
+    print("WINNER WINNER CHICKEN DINNER!!!!!" .. " The number was indeed " .. secretNumber .. "\n" .. "You have won: $" .. price)
+  else
+    print("Better luck next time!")
+  end
+end
+
+-- Enter number and see if you won
+numGuess(42)
