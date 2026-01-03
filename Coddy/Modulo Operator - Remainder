@@ -1,18 +1,43 @@
-## Lesson 1 - Operators 1 Arimethic & Conc
+## Lesson Operators 1 Arimethic & Conc
+Modulo Operator - Remainder
 
 
-calcute the the remainder (left over) number. 
-Example:
-85 % 10 = 5 || 8 * 10 = 80 -> remainder is 5
+
+The modulo operator represented by the percent symbol %. This operator finds the remainder that's left over after dividing one number by another.
+
+Here's how the modulo operator works:
+
+result = 10 % 3    -- result is 1 (10 divided by 3 is 3 with remainder 1)
+result = 15 % 4    -- result is 3 (15 divided by 4 is 3 with remainder 3)
+result = 8 % 2     -- result is 0 (8 divided by 2 is 4 with no remainder)
+One of the most practical uses of the modulo operator is determining if a number is even or odd. When you divide any number by 2, if the remainder is 0, the number is even. If the remainder is 1, the number is odd:
+
+number = 7
+remainder = number % 2    -- remainder is 1, so 7 is odd
+
+number = 10
+remainder = number % 2    -- remainder is 0, so 10 is even
+Quiz icon
+
+______________________________________________________________________________________
+______________________________________________________________________________________
 
 
 local playerScore = 85
 
 -- TODO: Write your code here to calculate the remainder using modulo operator
 function checkRemainder()
-   remainder = playerScore % 10
+   remainder = playerScore % 10             -- 85 % 10 = 5 || 8 * 10 = 80 -> remainder is 5
    print(remainder)
 end
 
 -- Print the remainder
 checkRemainder()
+
+______________________________________________________________________________________
+______________________________________________________________________________________
+______________________________________________________________________________________
+
+Output:
+
+5
